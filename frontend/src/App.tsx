@@ -13,6 +13,7 @@ function App() {
     if (!query.trim()) {
       setResponse('')
       setQuery('')
+      return
     }
 
     try {
