@@ -10,15 +10,19 @@ This projects unlocks me to practice cloud deployment, connection to a DNS, CI/C
 
 ## Initial design
 
+<!-- markdownlint-disable MD033 -->
 <p align="center">
     <img src="./frontend/public/design.jpg" width="800" alt="Design sketch" />
 </p>
+<!-- markdownlint-enable MD033 -->
 
 ## Final result
 
+<!-- markdownlint-disable MD033 -->
 <p align="center">
     <img src="./frontend/public/app-demo.gif" width="800" alt="Implementation gif" />
 </p>
+<!-- markdownlint-enable MD033 -->
 
 ## Project setup
 
