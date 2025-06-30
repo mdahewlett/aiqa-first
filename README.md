@@ -1,35 +1,51 @@
-# What this project is  
+# A basic way to query an LLM
 
-This is my attempt at a simple frontend and backend setup for sending a query to an LLM and displaying the response to the user.
+The **real goal** of this project is to practice FE and BE setup: typescript + React + Vite + tailwindCSS + lucide + shadCN for the FE, python + fastapi + uvicorn for the BE.
 
-The goal is to practice project setup on the FE (typescript + React + Vite + tailwindCSS + lucide + shadCN) and the BE (python + fastapi + uvicorn).
+## So what
+
+I want to become *fast* at prototyping things, so making simple FE & BE projects is a good skill to get comfortable with early on.
+
+This projects unlocks me to practice cloud deployment, connection to a DNS, CI/CD, Docker, nginx, and other parts of software dev that are **NOT** writing code.
 
 ## Initial design
 
-A basic way to query a LLM seems like a good enough place to start. This is my initial sketch of the FE: ![Design sketch](./frontend/public/design.jpg)
+<p align="center">
+    <img src="./frontend/public/design.jpg" width="800" alt="Design sketch" />
+</p>
 
-## How to run
+## Final result
 
-Clone the repo
+<p align="center">
+    <img src="./frontend/public/app-demo.gif" width="800" alt="Implementation gif" />
+</p>
+
+## Project setup
+
+### Clone the repo
 
 ``` bash
 git clone https://github.com/mdahewlett/aiqa-first.git
 ```
 
-### Frontend
+### Run the frontend
 
 ``` bash
 cd aiqa-first/frontend
+
 npm i
+
 npm run dev
 ```
 
-### Backend
+### Run the backend
 
 ``` bash
 cd aiqa-first/backend
+
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
 uvicorn main:app --reload
 ```
