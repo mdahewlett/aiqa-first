@@ -16,7 +16,13 @@ function App() {
     }
 
     try {
-      const res = await fetch(`http://localhost:8000/chat?query=${encodeURIComponent(query)}`)
+      const res = await fetch("http://localhost:8000/chat", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json"
+        },
+        body: JSON.stringify({ query })
+    })
       const data = await res.json()
       setResponse(data.response)
     } catch (err) {
