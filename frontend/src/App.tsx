@@ -9,8 +9,21 @@ function App() {
   const [response, setResponse] = useState("")  
   const [query, setQuery] = useState("")
 
-  const handleSubmit = () => {
-    query.trim() ? setResponse(`Fetching response for "${query}"`) : setResponse('')
+  const handleSubmit = async () => {
+    if (!query.trim()) {
+      setResponse('')
+      setQuery('')
+    }
+
+    try {
+      const res = await fetch(`http://localhost:8000/chat?query=${encodeURIComponent(query)}`)
+      const data = await res.json()
+      setResponse(data.response)
+    } catch (err) {
+      console.error("API error:", err)
+      setResponse("Something went wrong.")
+    }
+
     setQuery("")
   }
 

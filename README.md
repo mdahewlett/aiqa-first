@@ -6,7 +6,7 @@ The goal is to practice project setup on the FE (typescript + React + Vite + tai
 
 ## Initial design
 
-A basic way to query a LLM seems like a good enough place to start. This is my initial sketch of the FE: ![Design sketch](./public/design.jpg)
+A basic way to query a LLM seems like a good enough place to start. This is my initial sketch of the FE: ![Design sketch](./frontend/public/design.jpg)
 
 ## How to run
 
@@ -14,17 +14,12 @@ Clone the repo
 
 ``` bash
 git clone https://github.com/mdahewlett/aiqa-first.git
-cd aiqa-first
 ```
 
-Install dependencies:
+### Frontend
 
 ``` bash
+cd aiqa-first/frontend
 npm i
-```
-
-Run the dev server:
-
-``` bash
 npm run dev
 ```
