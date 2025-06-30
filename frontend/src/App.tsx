@@ -27,7 +27,7 @@ function App() {
       setResponse(data.response)
     } catch (err) {
       console.error("API error:", err)
-      setResponse("Something went wrong.")
+      setResponse("Something went wrong. Please try again")
     }
 
     setQuery("")
